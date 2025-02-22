@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name CassetteAdapter)(type KiCad)(uri ${KIPRJMOD}/CassetteAdapter.pretty)(options "")(descr ""))
+)
