@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Audio to Datassette Adapter"
-Date "2025-02-22"
+Date "2025-03-16"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Original circuit by ZX_Jim"
@@ -206,16 +206,16 @@ F 3 "~" H 2820 2040 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2670 2040 2530 2040
+	2670 2040 2575 2040
 $Comp
 L power:GND #PWR04
 U 1 1 67A9D45B
-P 2645 2530
-F 0 "#PWR04" H 2645 2280 50  0001 C CNN
-F 1 "GND" H 2650 2357 50  0000 C CNN
-F 2 "" H 2645 2530 50  0001 C CNN
-F 3 "" H 2645 2530 50  0001 C CNN
-	1    2645 2530
+P 2575 2530
+F 0 "#PWR04" H 2575 2280 50  0001 C CNN
+F 1 "GND" H 2580 2357 50  0000 C CNN
+F 2 "" H 2575 2530 50  0001 C CNN
+F 3 "" H 2575 2530 50  0001 C CNN
+	1    2575 2530
 	1    0    0    -1  
 $EndComp
 Connection ~ 3940 2295
@@ -507,7 +507,7 @@ Wire Wire Line
 Text Notes 3445 1995 2    50   ~ 0
 VOLUME\nCONTROL
 Text Notes 3490 4005 0    50   ~ 0
-1. When the green LED is switched off, press Pause and when it lights up again, press it again, manually emulating motor control.\n\n2. Adjust the volume to the point where the red LED will be permanently lit, but do not "overdo" it.\n\n3. Prefer T64 files, they are digital and fast-loadload. Conversion to WAV can be done with WavPrg.
+1. When the "Motor" LED is switched off, press Pause and when it lights up again, press it again, manually emulating motor control.\n\n2. Adjust the volume to the point where the "Signal" LED will be permanently lit, but do not "overdo" it.\n\n3. Prefer T64 files, they are digital and fast-load. Conversion to WAV can be done with WavPrg.
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 67DE5DE7
@@ -536,22 +536,22 @@ Wire Wire Line
 $Comp
 L PJRAN1X1U01X:PJRAN1X1U01X CN1
 U 1 1 67DEF46D
-P 2230 2240
-F 0 "CN1" H 2238 2621 50  0000 C CNN
-F 1 "AUDIO_IN" H 2238 2530 50  0000 C CNN
-F 2 "CassetteAdapter:SWITCHCRAFT_PJRAN1X1U01X" H 2230 2240 50  0001 L BNN
-F 3 "A" H 2230 2240 50  0001 L BNN
-F 4 "Switchcraft" H 2230 2240 50  0001 L BNN "Field4"
-F 5 "13mm" H 2230 2240 50  0001 L BNN "Field5"
-F 6 "Manufacturer Recommendations" H 2230 2240 50  0001 L BNN "Field6"
-	1    2230 2240
+P 2175 2240
+F 0 "CN1" H 2183 2621 50  0000 C CNN
+F 1 "AUDIO_IN" H 2183 2530 50  0000 C CNN
+F 2 "CassetteAdapter:SWITCHCRAFT_PJRAN1X1U01X" H 2175 2240 50  0001 L BNN
+F 3 "A" H 2175 2240 50  0001 L BNN
+F 4 "Switchcraft" H 2175 2240 50  0001 L BNN "Field4"
+F 5 "13mm" H 2175 2240 50  0001 L BNN "Field5"
+F 6 "Manufacturer Recommendations" H 2175 2240 50  0001 L BNN "Field6"
+	1    2175 2240
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2530 2340 2645 2340
+	2475 2340 2575 2340
 Wire Wire Line
-	2645 2340 2645 2530
-NoConn ~ 2530 2240
+	2575 2340 2575 2530
+NoConn ~ 2475 2240
 $Comp
 L Device:C C3
 U 1 1 67E0ACA1
@@ -641,4 +641,57 @@ Text Notes 6400 3045 0    50   ~ 0
 RED
 Text Notes 8190 2625 0    50   ~ 0
 GREEN
+$Comp
+L Connector:AudioJack3_SwitchTR CN101
+U 1 1 67EF6D99
+P 1430 2240
+F 0 "CN101" H 1151 2073 50  0000 R CNN
+F 1 "AUDIO_IN_JACK" H 1151 2164 50  0000 R CNN
+F 2 "CassetteAdapter:AudioJack_SJ1-3525N" H 1430 2240 50  0001 C CNN
+F 3 "~" H 1430 2240 50  0001 C CNN
+	1    1430 2240
+	1    0    0    1   
+$EndComp
+NoConn ~ 1630 1940
+NoConn ~ 1630 2140
+NoConn ~ 1630 2240
+$Comp
+L power:GND #PWR0103
+U 1 1 67EFF5D4
+P 1745 2530
+F 0 "#PWR0103" H 1745 2280 50  0001 C CNN
+F 1 "GND" H 1750 2357 50  0000 C CNN
+F 2 "" H 1745 2530 50  0001 C CNN
+F 3 "" H 1745 2530 50  0001 C CNN
+	1    1745 2530
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1630 2340 1745 2340
+Wire Wire Line
+	1745 2340 1745 2530
+Wire Wire Line
+	1630 2040 1745 2040
+Wire Wire Line
+	1745 2040 1745 1775
+Wire Wire Line
+	1745 1775 2575 1775
+Wire Wire Line
+	2575 1775 2575 2040
+Connection ~ 2575 2040
+Wire Wire Line
+	2575 2040 2475 2040
+Text Notes 1140 2495 2    50   ~ 0
+Alternative\nInput\nJack
+$Comp
+L void:Void V0
+U 1 1 67F13015
+P 10590 6380
+F 0 "V0" H 10668 6426 50  0000 L CNN
+F 1 "OSHW_LOGO" H 10668 6335 50  0000 L CNN
+F 2 "CassetteAdapter:cc_by_nc_sa_small" H 10590 6380 50  0001 C CNN
+F 3 "" H 10590 6380 50  0001 C CNN
+	1    10590 6380
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
