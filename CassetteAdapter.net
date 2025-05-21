@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/CassetteAdapter/CassetteAdapter.sch)
-    (date "Wed 21 May 2025 21:54:48 CEST")
+    (date "Wed 21 May 2025 22:10:33 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -44,7 +44,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 67A91BED))
     (comp (ref R1)
-      (value 1.2k)
+      (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
@@ -93,7 +93,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 67B0E4F9))
     (comp (ref RV1)
-      (value 15k)
+      (value 10k)
       (footprint CassetteAdapter:Pot_Bourns_3306P)
       (datasheet ~)
       (libsource (lib Device) (part R_POT) (description Potentiometer))
