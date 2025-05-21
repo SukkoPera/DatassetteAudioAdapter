@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Audio to Datassette Adapter"
-Date "2025-03-29"
+Date "2025-05-21"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Original circuit by ZX_Jim"
@@ -308,19 +308,6 @@ Wire Wire Line
 Wire Wire Line
 	7555 2195 7440 2195
 Connection ~ 7555 2195
-$Comp
-L Connector:Conn_01x06_Male J?
-U 1 1 67ACD4FD
-P 10670 2295
-AR Path="/67ABBA81/67ACD4FD" Ref="J?"  Part="1" 
-AR Path="/67ACD4FD" Ref="CN2"  Part="1" 
-F 0 "CN2" H 10642 2269 50  0000 R CNN
-F 1 "TAPE_PORT" H 10642 2178 50  0000 R CNN
-F 2 "CassetteAdapter:C64-Cassette-Port-Female" H 10670 2295 50  0001 C CNN
-F 3 "~" H 10670 2295 50  0001 C CNN
-	1    10670 2295
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	10470 2495 10360 2495
 Wire Wire Line
@@ -710,5 +697,18 @@ F 2 "" H 7230 2595 50  0001 C CNN
 F 3 "" H 7230 2595 50  0001 C CNN
 	1    7230 2595
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 67ACD4FD
+P 10670 2395
+AR Path="/67ABBA81/67ACD4FD" Ref="J?"  Part="1" 
+AR Path="/67ACD4FD" Ref="CN2"  Part="1" 
+F 0 "CN2" H 10642 2369 50  0000 R CNN
+F 1 "TAPE_PORT" H 10642 2278 50  0000 R CNN
+F 2 "CassetteAdapter:C64-Cassette-Port-Female" H 10670 2395 50  0001 C CNN
+F 3 "~" H 10670 2395 50  0001 C CNN
+	1    10670 2395
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
