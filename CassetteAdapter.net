@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/CassetteAdapter/CassetteAdapter.sch)
-    (date "Wed 21 May 2025 22:10:33 CEST")
+    (date "Sat 28 Jun 2025 22:25:28 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -86,7 +86,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 67AA6305))
     (comp (ref R5)
-      (value 1.2k)
+      (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
@@ -125,7 +125,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 67E14075))
     (comp (ref R6)
-      (value 1.2k)
+      (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
@@ -141,6 +141,8 @@
     (comp (ref V0)
       (value OSHW_LOGO)
       (footprint CassetteAdapter:cc_by_nc_sa_small)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib void) (part Void) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 67F13015))
