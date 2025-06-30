@@ -10,7 +10,7 @@ Rev "1git"
 Comp "SukkoPera"
 Comment1 "Original circuit by ZX_Jim"
 Comment2 "https://zxjim.blogspot.com/2011_06_01_archive.html"
-Comment3 ""
+Comment3 "Licensed under CC BY-NC-SA 4.0"
 Comment4 ""
 $EndDescr
 $Comp
