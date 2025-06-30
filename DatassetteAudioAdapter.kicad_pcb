@@ -162,7 +162,7 @@
     (add_net GND)
   )
 
-  (module CassetteAdapter:cc_by_nc_sa_small (layer B.Cu) (tedit 0) (tstamp 67D7F5E2)
+  (module DatassetteAudioAdapter:cc_by_nc_sa_small (layer B.Cu) (tedit 0) (tstamp 67D7F5E2)
     (at 144.769166 94.732 180)
     (path /67F13015)
     (fp_text reference V0 (at 0 0) (layer B.SilkS) hide
@@ -284,7 +284,7 @@
       (xy 3.514499 0.031726) (xy 3.519761 0.049945) (xy 3.568189 0.21665) (xy 3.624095 0.095625)) (layer B.SilkS) (width 0.01))
   )
 
-  (module CassetteAdapter:AudioJack_SJ1-3525N (layer F.Cu) (tedit 67D6E52B) (tstamp 67D7DE59)
+  (module DatassetteAudioAdapter:AudioJack_SJ1-3525N (layer F.Cu) (tedit 67D6E52B) (tstamp 67D7DE59)
     (at 148.343 72.262 90)
     (tags "audio jack 3.5mm trs")
     (path /67EF6D99)
@@ -334,7 +334,7 @@
     )
   )
 
-  (module CassetteAdapter:C64-Cassette-Port-Female (layer F.Cu) (tedit 67BA548A) (tstamp 67BABB77)
+  (module DatassetteAudioAdapter:C64-Cassette-Port-Female (layer F.Cu) (tedit 67BA548A) (tstamp 67BABB77)
     (at 131.699 109.22)
     (path /67ACD4FD)
     (fp_text reference CN2 (at -7.366 -7.112) (layer F.SilkS)
@@ -456,7 +456,7 @@
     )
   )
 
-  (module CassetteAdapter:SWITCHCRAFT_PJRAN1X1U01X (layer F.Cu) (tedit 64D76CF8) (tstamp 67BABB5F)
+  (module DatassetteAudioAdapter:SWITCHCRAFT_PJRAN1X1U01X (layer F.Cu) (tedit 64D76CF8) (tstamp 67BABB5F)
     (at 144.593 72.262 180)
     (path /67DEF46D)
     (fp_text reference CN1 (at 7.179 4.19) (layer F.SilkS)
@@ -501,7 +501,7 @@
     )
   )
 
-  (module CassetteAdapter:Pot_Bourns_3306P (layer F.Cu) (tedit 62376477) (tstamp 67BABC25)
+  (module DatassetteAudioAdapter:Pot_Bourns_3306P (layer F.Cu) (tedit 62376477) (tstamp 67BABC25)
     (at 138.323 83.352 90)
     (path /67A98899)
     (fp_text reference RV1 (at -4.659 0.742 180) (layer F.SilkS)
